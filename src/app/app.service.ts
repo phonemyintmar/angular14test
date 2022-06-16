@@ -9,6 +9,6 @@ export class AppService {
   constructor(private http: HttpClient) { }
 
   login(data: any) {
-    return this.http.post('https://mpg.mytel.com.mm:9220/auth/realms/mytel-internal/protocol/openid-connect/token', data);
+    return this.http.post('https://ethereal-admin-portal.vercel.app/firebase/auth', data);
   }
 }
